@@ -17,3 +17,10 @@
       ansible.builtin.copy:
         src: dot-files/.gitconfig
         dest: ~/.gitconfig
+
+    - name: Ensure env variables load in profile
+      ansible.builtin.blockinfile:
+        path: ~/.profile
+        block: |
+          # Source file with custom environment values
+          . "$HOME/.myenv"

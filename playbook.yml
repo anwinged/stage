@@ -1,0 +1,14 @@
+- hosts: 127.0.0.1
+  connection: local
+
+  tasks:
+
+#    - name: Install fx json viewer
+#      snap:
+#        name: fx
+#      become: yes
+
+    - name: Copy file with env variables
+      ansible.builtin.copy:
+        src: dot-files/.myenv
+        dest: ~/.myenv

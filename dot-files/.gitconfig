@@ -1,0 +1,10 @@
+[user]
+	name = Anton Vakhrushev
+	email = anwinged@ya.ru
+	signingkey = 581F7473F7A21FA2
+
+[commit]
+	gpgsign = true
+
+[alias]
+	please = push --force-with-lease

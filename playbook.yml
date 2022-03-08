@@ -12,3 +12,8 @@
       ansible.builtin.copy:
         src: dot-files/.myenv
         dest: ~/.myenv
+
+    - name: Copy gitconfig
+      ansible.builtin.copy:
+        src: dot-files/.gitconfig
+        dest: ~/.gitconfig
